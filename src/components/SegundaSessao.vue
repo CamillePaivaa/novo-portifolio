@@ -2,7 +2,7 @@
   <div class="hobbys_container">
     <h1>Meus Hobbyes</h1>
     <div class="img_text_container">
-      <img class="img1" src="../assets/image.png" />
+      <img class="img1" src="../assets/esporte.png" />
       <div>
         <h3>Praticar Esportes</h3>
         <p>lkdsdjbfjfbdnfkfefjlefjeflefe</p>
