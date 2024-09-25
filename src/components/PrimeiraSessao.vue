@@ -4,13 +4,13 @@
     <div class="text_container">
       <p>Olá, me chamo</p>
       <h1>Camille Custódio de Paiva</h1>
-      <p>Frontend VueJs /Ui Designer/Ux Designer</p>
+      <p class="text_azul">Frontend VueJs /Ui Designer/Ux Designer</p>
       <p>
-        Sou de Brás Pires, uma cidadezinha do interior de Minas Gerais.
-        Atualmente estou cursando Sistemas de Informação na UFV- Universidade
-        Federal de Viçosa. Tenho 21 anos e estou em busca de um emprego para que
-        eu possa aprimorar minhas habilidades e construir uma base sólida, a fim
-        de alavancar a minha carreira profissional.
+        Sou de Brás Pires, uma cidade do interior de Minas Gerais, e atualmente
+        curso Sistemas de Informação na UFV (Universidade Federal de Viçosa).
+        Com 21 anos, estou em busca de uma oportunidade como desenvolvedora
+        frontend com Vue.js, a fim de aprimorar minhas habilidades e construir
+        uma base sólida para alavancar minha carreira profissional.
       </p>
     </div>
   </div>
@@ -52,5 +52,9 @@
 .text_container {
   width: 45%;
   height: 50%;
+}
+
+.text_azul {
+  color: blue;
 }
 </style>

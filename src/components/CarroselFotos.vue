@@ -24,13 +24,15 @@
 
 <script>
 export default {
+  props: {
+    imagens: {
+      type: Array,
+      required: true,
+    },
+  },
   data() {
     return {
       imagemAtual: 0,
-      imagens: [
-        require("@/assets/projetos/filmes1.png"),
-        require("@/assets/projetos/filmes2.png"),
-      ],
     };
   },
   methods: {
@@ -48,18 +50,19 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .carrossel-container {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   padding-top: 50px;
   column-gap: 30px;
 }
 
 .carrossel {
-  width: 500px;
-  height: 250px;
+  width: 900px;
+  height: 450px;
   overflow: hidden;
 }
 
@@ -69,7 +72,7 @@ export default {
 }
 
 .setas {
-  width: 50px;
+  width: 30px;
   height: auto;
 }
 </style>

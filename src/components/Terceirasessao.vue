@@ -1,7 +1,14 @@
 <template>
   <div class="habilidades_container">
     <h1>Minhas Habilidades</h1>
-    <p>ksfjklnsfçsçnfsldgngjfgfmbfnbfbfdçdç</p>
+    <div class="descricao_habilidades">
+      <p>
+        Ao longo da minha trajetória, venho construindo uma bagagem sólida de
+        conhecimentos. Tenho mais de 2 anos de experiência como freelancer em
+        UI/UX design e agora estou me desafiando ainda mais, aprendendo cada vez
+        mais sobre as ferramentas do desenvolvimento frontend com Vue.js.
+      </p>
+    </div>
 
     <div class="cards_componente">
       <img src="../assets/cards/card1.png" />
@@ -39,7 +46,13 @@ export default {
   justify-content: center;
 
   img {
-    width: 230px;
+    width: 200px;
   }
+}
+
+.descricao_habilidades {
+  width: 800px;
+  height: 20px;
+  margin-bottom: 120px;
 }
 </style>
