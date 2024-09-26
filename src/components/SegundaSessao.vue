@@ -2,7 +2,7 @@
   <div class="hobbys_container">
     <h1>Meus Hobbyes</h1>
     <div class="img_text_container">
-      <img class="img1" src="../assets/esporte.png" />
+      <img class="img1" src="../assets/esport.png" />
       <div class="legenda_esportes">
         <h3>Praticar Esportes</h3>
         <p>
@@ -74,8 +74,8 @@
   column-gap: 70px;
 }
 .img1 {
-  width: 500px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   border-radius: 10px;
 }
 .img {
