@@ -2,7 +2,7 @@
   <div class="hobbys_container">
     <h1>Meus Hobbyes</h1>
     <div class="img_text_container">
-      <img class="img1" src="../assets/esport.png" />
+      <img class="img1" :src="esporte" />
       <div class="legenda_esportes">
         <h3>Praticar Esportes</h3>
         <p>
@@ -17,7 +17,7 @@
     </div>
     <div class="img_linha_container">
       <div>
-        <img class="img" src="../assets/viagem.png" />
+        <img class="img" :src="viagem" />
         <h3>Viajar</h3>
         <p>
           Gosto de viajar, pois acredito que explorar novos lugares e culturas
@@ -27,7 +27,7 @@
       </div>
 
       <div>
-        <img class="img" src="../assets/estudar.png" />
+        <img class="img" :src="estudar" />
         <h3>Aprender Coisas Novas</h3>
         <p>
           Estou sempre em busca de conhecimento para aprimorar minhas
@@ -37,7 +37,7 @@
       </div>
 
       <div>
-        <img class="img" src="../assets/dorama.png" />
+        <img class="img" :src="dorama" />
         <h3>Assistir Doramas</h3>
         <p>
           Gosto de assistir doramas, pois eles sempre trazem histórias
@@ -47,6 +47,19 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      esporte: require("../assets/esport.png"),
+      viagem: require("../assets/viagem.png"),
+      estudar: require("../assets/estudar.png"),
+      dorama: require("../assets/dorama.png"),
+    };
+  },
+};
+</script>
 
 <style>
 .hobbys_container {

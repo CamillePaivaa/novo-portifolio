@@ -24,6 +24,25 @@
         </p>
         <CarrosselFotos :imagens="catalogoFilmes" />
       </div>
+
+      <div class="carrosel_container">
+        <h3>Pet Mania</h3>
+        <p>
+          O Pet Mania é um site dedicado a oferecer uma experiência completa
+          para quem busca serviços de pet shop. Desenvolvido com Vue.js, a
+          plataforma permite que os usuários agendem atendimentos com
+          facilidade, explorem a lista de serviços oferecidos, como banho, tosa
+          e consultas, e ainda visualizem avaliações e comentários de outros
+          clientes, ajudando a garantir a qualidade dos serviços prestados. Além
+          disso, o site oferece uma interface intuitiva e moderna,
+          proporcionando uma navegação fluida e informações claras sobre os
+          cuidados disponíveis para os pets. O Pet Mania foi projetado para
+          facilitar o acesso a serviços essenciais, garantindo que os donos de
+          animais encontrem tudo o que precisam em um só lugar.
+        </p>
+
+        <CarrosselFotos :imagens="petMania" />
+      </div>
     </div>
 
     <div class="projetos_container">
@@ -88,7 +107,7 @@
           eficiente e sem complicações.
         </p>
         <img
-          src="../assets/projetos/lavarme (2).png"
+          :src="lavarme"
           style="width: 900px; height: 500px; display: block; margin: auto"
         />
       </div>
@@ -109,6 +128,12 @@ export default {
         require("@/assets/projetos/filmes1.png"),
         require("@/assets/projetos/filmes2.png"),
       ],
+      petMania: [
+        require("@/assets/projetos/petmania.png"),
+        require("@/assets/projetos/petmania1.png"),
+        require("@/assets/projetos/petmania2.png"),
+      ],
+
       foodFacil: [
         require("../assets/projetos/foodfacil.png"),
         require("../assets/projetos/foodfacil1.png"),
@@ -125,6 +150,8 @@ export default {
         require("../assets/projetos/faxinex1.png"),
         require("../assets/projetos/faxinex2.png"),
       ],
+
+      lavarme: require("../assets/projetos/lavarme.png"),
     };
   },
 };

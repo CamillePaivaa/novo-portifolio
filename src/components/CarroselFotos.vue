@@ -2,7 +2,7 @@
   <div class="carrossel-container">
     <img
       class="setas"
-      src="../assets/seta-lefth.png"
+      :src="setaLefth"
       @click="anterior"
       :disabled="imagemAtual === 0"
     />
@@ -15,7 +15,7 @@
     </div>
     <img
       class="setas"
-      src="../assets/seta-right.png"
+      :src="setaRigth"
       @click="proximo"
       :disabled="imagemAtual === imagens.length - 1"
     />
@@ -33,6 +33,8 @@ export default {
   data() {
     return {
       imagemAtual: 0,
+      setaLefth: require("../assets/seta-lefth.png"),
+      setaRigth: require("../assets/seta-right.png"),
     };
   },
   methods: {

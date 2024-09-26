@@ -11,14 +11,14 @@
     </div>
 
     <div class="cards_componente">
-      <img src="../assets/cards/card1.png" />
-      <img src="../assets/cards/card2.png" />
-      <img src="../assets/cards/card3.png" />
-      <img src="../assets/cards/card4.png" />
-      <img src="../assets/cards/card5.png" />
-      <img src="../assets/cards/card6.png" />
-      <img src="../assets/cards/card7.png" />
-      <img src="../assets/cards/card8.png" />
+      <img :src="card1" />
+      <img :src="card2" />
+      <img :src="card3" />
+      <img :src="card4" />
+      <img :src="card5" />
+      <img :src="card6" />
+      <img :src="card7" />
+      <img :src="card8" />
     </div>
   </div>
 </template>
@@ -26,6 +26,19 @@
 <script>
 export default {
   name: "TerceiraSessao",
+
+  data() {
+    return {
+      card1: require("../assets/cards/card1.png"),
+      card2: require("../assets/cards/card2.png"),
+      card3: require("../assets/cards/card3.png"),
+      card4: require("../assets/cards/card4.png"),
+      card5: require("../assets/cards/card5.png"),
+      card6: require("../assets/cards/card6.png"),
+      card7: require("../assets/cards/card7.png"),
+      card8: require("../assets/cards/card8.png"),
+    };
+  },
 };
 </script>
 
