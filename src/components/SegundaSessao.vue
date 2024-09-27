@@ -1,6 +1,6 @@
 <template>
   <div class="hobbys_container">
-    <h1>Meus Hobbyes</h1>
+    <h1>Meus Hobbies</h1>
     <div class="img_text_container">
       <img class="img1" :src="esporte" />
       <div class="legenda_esportes">
