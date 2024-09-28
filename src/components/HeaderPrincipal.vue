@@ -23,6 +23,7 @@ export default {
   padding-left: 15%;
   column-gap: 5%;
   position: fixed;
+  z-index: 3;
   a {
     color: #fff;
     text-decoration: none;

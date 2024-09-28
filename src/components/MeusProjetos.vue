@@ -4,44 +4,56 @@
       <h1>Meus Projetos - VueJs</h1>
 
       <div class="carrosel_container">
-        <h3>Catálogo de Filmes</h3>
-        <p>
-          Este projeto consiste em um catálogo de filmes desenvolvido com foco
-          em fornecer uma experiência rica e interativa ao usuário. A aplicação
-          consome dados de uma API RESTful que fornece uma vasta gama de
-          informações sobre filmes. Cada item do catálogo exibe detalhes
-          importantes, como:
-        </p>
-        <p>
-          Além do consumo da API, a aplicação foi aprimorada com uma
-          funcionalidade de favoritar. Com isso, o usuário pode marcar os filmes
-          que mais chamaram sua atenção e criar uma lista personalizada de
-          favoritos, permitindo fácil acesso a esses filmes posteriormente. O
-          design foi otimizado para uma navegação intuitiva, tornando a
-          experiência do usuário fluida e agradável. A interface responsiva
-          garante que o catálogo possa ser acessado em diferentes dispositivos,
-          desde smartphones até desktops.
-        </p>
-        <CarrosselFotos :imagens="catalogoFilmes" />
+        <div class="descricao_projeto_container">
+          <h3>Catálogo de Filmes</h3>
+          <p>
+            O projeto é um catálogo de filmes que consome uma API RESTful para
+            exibir informações detalhadas como título, descrição e trailer. A
+            aplicação permite ao usuário favoritar filmes e criar uma lista
+            personalizada de favoritos. O design é otimizado para navegação
+            intuitiva e responsiva, funcionando em dispositivos móveis e
+            desktops.
+          </p>
+
+          <div class="botoes">
+            <button class="botao_abrir_projeto">Abrir Projeto</button>
+            <img :src="botaoGit" style="width: 40px; height: 40px" />
+          </div>
+
+          <div class="tecnologias">
+            <div v-for="img in tecnologias" :key="img">
+              <img :src="img" />
+            </div>
+          </div>
+        </div>
+
+        <CarrosselFotos :imagens="catalogoFilmes" class="carrosel" />
       </div>
 
       <div class="carrosel_container">
-        <h3>Pet Mania</h3>
-        <p>
-          O Pet Mania é um site dedicado a oferecer uma experiência completa
-          para quem busca serviços de pet shop. Desenvolvido com Vue.js, a
-          plataforma permite que os usuários agendem atendimentos com
-          facilidade, explorem a lista de serviços oferecidos, como banho, tosa
-          e consultas, e ainda visualizem avaliações e comentários de outros
-          clientes, ajudando a garantir a qualidade dos serviços prestados. Além
-          disso, o site oferece uma interface intuitiva e moderna,
-          proporcionando uma navegação fluida e informações claras sobre os
-          cuidados disponíveis para os pets. O Pet Mania foi projetado para
-          facilitar o acesso a serviços essenciais, garantindo que os donos de
-          animais encontrem tudo o que precisam em um só lugar.
-        </p>
+        <div class="descricao_projeto_container">
+          <h3>Pet Mania</h3>
+          <p>
+            Pet Mania é um site de serviços de pet shop desenvolvido com Vue.js.
+            A plataforma permite agendar atendimentos, explorar serviços como
+            banho e tosa, e visualizar avaliações de clientes. O design é
+            moderno e intuitivo, garantindo navegação fluida e acesso rápido a
+            serviços essenciais para pets.
+          </p>
 
-        <CarrosselFotos :imagens="petMania" />
+          <div class="botoes">
+            <button class="botao_abrir_projeto">Abrir Projeto</button>
+            <img :src="botaoGit" style="width: 40px; height: 40px" />
+          </div>
+
+          <div class="tecnologias">
+            <div v-for="img in tecnologias" :key="img">
+              <img :src="img" />
+            </div>
+          </div>
+        </div>
+
+        <CarrosselFotos :imagens="petMania" class="carrosel" />
       </div>
     </div>
 
@@ -49,66 +61,73 @@
       <h1>Meus Projetos - Ui/Ux Design</h1>
 
       <div class="carrosel_container">
-        <h3>Faxinex</h3>
-        <p>Desenvolvido com o Figma</p>
-        <p>
-          O Faxinex facilita a contratação de diaristas em pequenos municípios.
-          A plataforma permite que profissionais de limpeza criem perfis e
-          ofereçam serviços, enquanto os clientes podem filtrar por localização,
-          programar serviços e se comunicar diretamente com os prestadores. O
-          sistema é autossustentável, com pacotes personalizados e preços
-          ajustados ao tamanho do local. O sistema se destaca por ser
-          autossustentável, sem a necessidade de um administrador, com pacotes
-          de serviços personalizáveis, cujos preços são definidos conforme o
-          tamanho do local a ser limpo. O principal objetivo do Faxinex é
-          proporcionar um serviço eficiente, confiável e acessível, tanto para
-          quem busca quanto para quem oferece serviços de limpeza.
-        </p>
-        <CarrosselFotos :imagens="faxinex" />
+        <div class="descricao_projeto_container">
+          <h3>Faxinex</h3>
+          <p>
+            Plataforma para contratação de diaristas em pequenos municípios.
+            Profissionais de limpeza podem criar perfis, e os clientes filtram
+            por localização e programam serviços. O sistema é autossustentável,
+            com pacotes personalizados e preços ajustados ao tamanho do local,
+            oferecendo uma solução eficiente e acessível para ambos os lados.
+          </p>
+        </div>
+        <CarrosselFotos :imagens="faxinex" class="carrosel" />
       </div>
 
       <div class="carrosel_container">
-        <h3>BanGeek</h3>
-        <p>
-          O Bangeek é um banco digital criado especialmente para o público geek.
-          Além de todas as funções bancárias tradicionais, o aplicativo se
-          destaca por oferecer opções de personalização, como mudança de temas e
-          avatares customizáveis, criando uma experiência imersiva e única. O
-          Bangeek combina praticidade financeira com um toque de diversão e
-          identidade para os usuários que valorizam um ambiente mais
-          personalizado e interativo.
-        </p>
-        <CarrosselFotos :imagens="banGeek" />
+        <div class="descricao_projeto_container">
+          <h3>BanGeek</h3>
+          <p>
+            O Bangeek é um banco digital criado especialmente para o público
+            geek. Além de todas as funções bancárias tradicionais, o aplicativo
+            se destaca por oferecer opções de personalização, como mudança de
+            temas e avatares customizáveis, criando uma experiência imersiva e
+            única. O Bangeek combina praticidade financeira com um toque de
+            diversão e identidade para os usuários que valorizam um ambiente
+            mais personalizado e interativo.
+          </p>
+        </div>
+        <CarrosselFotos :imagens="banGeek" class="carrosel" />
       </div>
 
       <div class="carrosel_container">
-        <h3>Food Fácil</h3>
-        <p>
-          O Food Fácil é um aplicativo voltado para facilitar pedidos de
-          salgadinhos para delivery. A plataforma oferece uma interface simples
-          e rápida, permitindo que os usuários explorem o cardápio, façam
-          pedidos de forma prática e acompanhem a entrega em tempo real. Voltado
-          para atender a demanda de eventos e consumo diário, o Food Fácil
-          proporciona uma experiência eficiente e conveniente para quem deseja
-          pedir seus salgados favoritos de forma rápida e confiável.
-        </p>
-        <CarrosselFotos :imagens="foodFacil" />
+        <div class="descricao_projeto_container">
+          <h3>Food Fácil</h3>
+          <p>
+            O Food Fácil é um aplicativo voltado para facilitar pedidos de
+            salgadinhos para delivery. A plataforma oferece uma interface
+            simples e rápida, permitindo que os usuários explorem o cardápio,
+            façam pedidos de forma prática e acompanhem a entrega em tempo real.
+            Voltado para atender a demanda de eventos e consumo diário, o Food
+            Fácil proporciona uma experiência eficiente e conveniente para quem
+            deseja pedir seus salgados favoritos de forma rápida e confiável.
+          </p>
+        </div>
+        <CarrosselFotos :imagens="foodFacil" class="carrosel" />
       </div>
 
       <div class="carrosel_container">
-        <h3>Lavar-me</h3>
-        <p>
-          O Lavar-me oferece uma solução prática para serviços de lavanderia. No
-          aplicativo, os usuários podem selecionar o tipo de roupa para lavar,
-          com preços específicos para cada peça, realizar pagamentos diretamente
-          pela plataforma e escolher entre levar as roupas à lavanderia mais
-          próxima ou solicitar a coleta e entrega em casa. O Lavar-me combina
-          conveniência e flexibilidade para quem busca um serviço de lavanderia
-          eficiente e sem complicações.
-        </p>
+        <div class="descricao_projeto_container">
+          <h3>Lavar-me</h3>
+          <p>
+            O Lavar-me oferece uma solução prática para serviços de lavanderia.
+            No aplicativo, os usuários podem selecionar o tipo de roupa para
+            lavar, com preços específicos para cada peça, realizar pagamentos
+            diretamente pela plataforma e escolher entre levar as roupas à
+            lavanderia mais próxima ou solicitar a coleta e entrega em casa. O
+            Lavar-me combina conveniência e flexibilidade para quem busca um
+            serviço de lavanderia eficiente e sem complicações.
+          </p>
+        </div>
         <img
           :src="lavarme"
-          style="width: 900px; height: 500px; display: block; margin: auto"
+          style="
+            width: 600px;
+            height: 300px;
+            position: absolute;
+            left: 47%;
+            border-radius: 10px;
+          "
         />
       </div>
     </div>
@@ -152,6 +171,15 @@ export default {
       ],
 
       lavarme: require("../assets/projetos/lavarme.png"),
+
+      tecnologias: [
+        require("../assets/projetos/tecnologias/vue.png"),
+        require("../assets/projetos/tecnologias/html5.png"),
+        require("../assets/projetos/tecnologias/javaScript.png"),
+        require("../assets/projetos/tecnologias/css.png"),
+      ],
+
+      botaoGit: require("../assets/projetos/git.png"),
     };
   },
 };
@@ -161,18 +189,70 @@ export default {
 .page_container {
   display: flex;
   flex-direction: column;
-  padding-top: 110px;
+  padding-top: 130px;
 }
 .projetos_container {
   display: flex;
   flex-direction: column;
-  width: 70%;
-  margin-left: 15%;
-}
+  width: 80%;
 
+  margin-left: 12%;
+}
 .carrosel_container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row; /* Mudança para colocar o texto abaixo */
+  align-items: center;
   margin-bottom: 70px;
+}
+
+.carrosel {
+  position: absolute;
+  margin-left: 37%;
+}
+.descricao_projeto_container {
+  margin-top: 20px; /* Espaçamento entre o carrossel e o texto */
+  background-color: rgb(248, 248, 248);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  border-radius: 10px;
+  box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.08);
+  padding-left: 40px;
+  padding-right: 20px;
+  width: 55%;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding-top: 65px;
+
+  p {
+    width: 73%;
+  }
+}
+
+.tecnologias {
+  display: flex;
+  flex-direction: row;
+  margin-top: -30px;
+  justify-content: end;
+  column-gap: 10px;
+
+  img {
+    width: 25px;
+  }
+}
+
+.botoes {
+  display: flex;
+  flex-direction: row;
+  column-gap: 30px;
+  padding-top: 80px;
+}
+
+.botao_abrir_projeto {
+  width: 150px;
+  height: 40px;
+  background-color: #090a0c;
+  border-radius: 10px;
+  color: #fff;
 }
 </style>
