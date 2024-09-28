@@ -51,12 +51,23 @@ export default {
 
 .seta {
   width: 50px;
+  animation: bounce 1.5s infinite;
 }
 
 .possicao_seta {
   display: flex;
   justify-content: center;
   padding: 2%;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px); /* Faz a seta descer */
+  }
 }
 
 .text_container {

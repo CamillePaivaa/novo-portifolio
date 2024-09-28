@@ -38,6 +38,10 @@ export default {
     };
   },
   methods: {
+    mounted() {
+      console.log("----CARROUSEL FOTOS");
+      console.log(this.imagens);
+    },
     anterior() {
       if (this.imagemAtual > 0) {
         this.imagemAtual--;
