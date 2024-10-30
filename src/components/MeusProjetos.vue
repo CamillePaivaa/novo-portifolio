@@ -15,6 +15,22 @@
     />
 
     <CardProjetos
+      titulo="Perguntas Frequentes"
+      descricao=" A dinâmica é divertida e desafiante: o jogador tem 10 segundos para responder cada pergunta. Se acertar, ganha um ponto; se errar ou deixar o tempo acabar, o ponto vai automaticamente para o computador! O jogo consome uma API para gerar perguntas aleatórias, tornando cada rodada única e permitindo uma jogabilidade infinita, com novos desafios surgindo a cada pergunta.Pode ser jogado em dispositivos móveis e desktops."
+      :imagens="perguntasFrequentes"
+      linkProjeto="https://jogo-de-perguntas-com-api.vercel.app/"
+      linkGit="https://github.com/CamillePaivaa/Jogo-de-Perguntas-Com-Api"
+    />
+
+    <CardProjetos
+      titulo="Minhas Taefas Pessoais"
+      descricao=" A dinâmica é divertida e desafiante: o jogador tem 10 segundos para responder cada pergunta. Se acertar, ganha um ponto; se errar ou deixar o tempo acabar, o ponto vai automaticamente para o computador! O jogo consome uma API para gerar perguntas aleatórias, tornando cada rodada única e permitindo uma jogabilidade infinita, com novos desafios surgindo a cada pergunta.Pode ser jogado em dispositivos móveis e desktops."
+      :imagens="listaTarefas"
+      linkProjeto="https://lista-de-tarefas-tan-zeta.vercel.app/"
+      linkGit="https://github.com/CamillePaivaa/Lista-de-Tarefas"
+    />
+
+    <CardProjetos
       titulo="Pet Mania"
       descricao=" Pet Mania é um site de serviços de pet shop desenvolvido com Vue.js.
             A plataforma permite agendar atendimentos, explorar serviços como
@@ -27,7 +43,7 @@
     />
 
     <h1>Meus Projetos - Ui/Ux Design</h1>
-    <CardProjetos
+    <CardProjetosUx
       titulo="Faxinex"
       descricao=" Plataforma para contratação de diaristas em pequenos municípios.
             Profissionais de limpeza podem criar perfis, e os clientes filtram
@@ -35,11 +51,10 @@
             com pacotes personalizados e preços ajustados ao tamanho do local,
             oferecendo uma solução eficiente e acessível para ambos os lados."
       :imagens="faxinex"
-      linkProjeto="https://catalogodefilmeconsimindoapi.vercel.app/"
-      linkGit="https://github.com/CamillePaivaa/Cat-logo-de-Filmes_consumindoApi"
+      linkProjeto="https://www.behance.net/gallery/192795073/Faxinex-App-UI-UX-Design-XD-FIGMAPSD"
     />
 
-    <CardProjetos
+    <CardProjetosUx
       titulo="BanGeek"
       descricao=" O Bangeek é um banco digital criado especialmente para o público
             geek. Além de todas as funções bancárias tradicionais, o aplicativo
@@ -49,11 +64,10 @@
             diversão e identidade para os usuários que valorizam um ambiente
             mais personalizado e interativo."
       :imagens="banGeek"
-      linkProjeto="https://catalogodefilmeconsimindoapi.vercel.app/"
-      linkGit="https://github.com/CamillePaivaa/Cat-logo-de-Filmes_consumindoApi"
+      linkProjeto="https://www.behance.net/gallery/191356779/Bangeek-UI-UX-Design-Digital-Bank-XD-PSD"
     />
 
-    <CardProjetos
+    <CardProjetosUx
       titulo="Food Fácil"
       descricao=" O Food Fácil é um aplicativo voltado para facilitar pedidos de
             salgadinhos para delivery. A plataforma oferece uma interface
@@ -63,41 +77,14 @@
             Fácil proporciona uma experiência eficiente e conveniente para quem
             deseja pedir seus salgados favoritos de forma rápida e confiável."
       :imagens="foodFacil"
-      linkProjeto="https://catalogodefilmeconsimindoapi.vercel.app/"
-      linkGit="https://github.com/CamillePaivaa/Cat-logo-de-Filmes_consumindoApi"
-    />
-
-    <CardProjetos
-      titulo="Lavar-me"
-      descricao=" O Lavar-me oferece uma solução prática para serviços de lavanderia.
-            No aplicativo, os usuários podem selecionar o tipo de roupa para
-            lavar, com preços específicos para cada peça, realizar pagamentos
-            diretamente pela plataforma e escolher entre levar as roupas à
-            lavanderia mais próxima ou solicitar a coleta e entrega em casa. O
-            Lavar-me combina conveniência e flexibilidade para quem busca um
-            serviço de lavanderia eficiente e sem complicações."
-      :imagens="lavarme"
-      linkProjeto="https://catalogodefilmeconsimindoapi.vercel.app/"
-      linkGit="https://github.com/CamillePaivaa/Cat-logo-de-Filmes_consumindoApi"
+      linkProjeto="https://www.behance.net/gallery/194187151/FoodFacil-App-UI-UX-Design-XD-FIGMA-PSD"
     />
   </div>
-
-  <!-- 
-        <img
-          :src="lavarme"
-          style="
-            width: 600px;
-            height: 300px;
-            position: absolute;
-            left: 47%;
-            border-radius: 10px;
-          "
-        />
-  -->
 </template>
 
 <script>
 import CardProjetos from "./CardProjetos.vue";
+import CardProjetosUx from "./CardProjetosUx.vue";
 
 export default {
   data() {
@@ -106,6 +93,12 @@ export default {
         require("@/assets/projetos/filmes1.png"),
         require("@/assets/projetos/filmes2.png"),
       ],
+      perguntasFrequentes: [
+        require("../assets/projetos/perguntas.png"),
+        require("../assets/projetos/perguntas1.png"),
+        require("../assets/projetos/perguntas2.png"),
+      ],
+      listaTarefas: [require("../assets/projetos/tarefas.png")],
       petMania: [
         require("@/assets/projetos/petmania.png"),
         require("@/assets/projetos/petmania1.png"),
@@ -135,6 +128,7 @@ export default {
 
   components: {
     CardProjetos,
+    CardProjetosUx,
   },
   methods: {
     redirectTo(link) {

@@ -8,11 +8,6 @@
         <button class="botao_abrir_projeto" @click="redirectTo(linkProjeto)">
           Abrir Projeto
         </button>
-        <img
-          :src="botaoGit"
-          style="width: 40px; height: 40px; cursor: pointer"
-          @click="redirectTo(linkGit)"
-        />
       </div>
 
       <div class="tecnologias">
@@ -25,25 +20,11 @@
     <CarroselFotos :imagens="imagens" class="carrosel" />
   </div>
 </template>
-
 <script>
 import CarroselFotos from "./CarroselFotos.vue";
-
 export default {
   components: {
     CarroselFotos,
-  },
-  data() {
-    return {
-      tecnologias: [
-        require("../assets/projetos/tecnologias/vue.png"),
-        require("../assets/projetos/tecnologias/html5.png"),
-        require("../assets/projetos/tecnologias/javaScript.png"),
-        require("../assets/projetos/tecnologias/css.png"),
-      ],
-
-      botaoGit: require("../assets/projetos/git.png"),
-    };
   },
   props: {
     imagens: {
@@ -62,10 +43,6 @@ export default {
       type: String,
       required: true,
     },
-    linkGit: {
-      type: String,
-      required: true,
-    },
   },
 
   methods: {
@@ -75,7 +52,6 @@ export default {
   },
 };
 </script>
-
 <style scoped>
 .projetos_container {
   display: flex;

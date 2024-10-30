@@ -1,7 +1,7 @@
 <template>
   <div class="habilidades_container">
-    <h1>Minhas Habilidades</h1>
     <div class="descricao_habilidades">
+      <h1>Minhas Habilidades</h1>
       <p>
         Ao longo da minha trajetória, venho construindo uma bagagem sólida de
         conhecimentos. Tenho mais de 2 anos de experiência como freelancer em
@@ -11,14 +11,10 @@
     </div>
 
     <div class="cards_componente">
-      <img :src="card1" />
-      <img :src="card2" />
-      <img :src="card3" />
-      <img :src="card4" />
-      <img :src="card5" />
-      <img :src="card6" />
-      <img :src="card7" />
-      <img :src="card8" />
+      <div v-for="(nome, index) in meuCard.nomeCard" :key="index" class="card">
+        <img :src="meuCard.imgCard[index]" alt="Imagem do card" />
+        {{ nome }}
+      </div>
     </div>
   </div>
 </template>
@@ -29,14 +25,29 @@ export default {
 
   data() {
     return {
-      card1: require("../assets/cards/card1.png"),
-      card2: require("../assets/cards/card2.png"),
-      card3: require("../assets/cards/card3.png"),
-      card4: require("../assets/cards/card4.png"),
-      card5: require("../assets/cards/card5.png"),
-      card6: require("../assets/cards/card6.png"),
-      card7: require("../assets/cards/card7.png"),
-      card8: require("../assets/cards/card8.png"),
+      meuCard: {
+        nomeCard: [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "Adobe XD",
+          "Figma",
+          "Photoshop",
+          "VueJs",
+          "Git",
+        ],
+
+        imgCard: [
+          require("../assets/imgCards/html.png"),
+          require("../assets/imgCards/css.png"),
+          require("../assets/imgCards/javascript.png"),
+          require("../assets/imgCards/adobexd.png"),
+          require("../assets/imgCards/figma.png"),
+          require("../assets/imgCards/photoshop.png"),
+          require("../assets/imgCards/vuejs.png"),
+          require("../assets/imgCards/git.png"),
+        ],
+      },
     };
   },
 };
@@ -45,27 +56,49 @@ export default {
 <style scoped>
 .habilidades_container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
   padding-top: 70px;
+  width: 80%;
+  margin-left: 10%;
+  column-gap: 30px;
 }
 
 .cards_componente {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 70%;
+  width: 60%;
   gap: 30px;
+  margin-bottom: 50px;
   justify-content: center;
 
   img {
-    width: 200px;
+    width: 80px;
   }
 }
 
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 50px;
+  border-radius: 10px;
+  box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.08);
+  width: 150px;
+  height: 190px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
 .descricao_habilidades {
-  width: 800px;
-  height: 20px;
-  margin-bottom: 120px;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
 }
 </style>
