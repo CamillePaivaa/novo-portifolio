@@ -33,20 +33,19 @@ export default {
 <style>
 .apresentacao_inicial_container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  text-align: center;
+  justify-content: center;
+  text-align: start;
   background-color: #090a0c;
   color: #fff;
   height: 640px;
-  row-gap: 50px;
-  padding-top: 100px;
+  column-gap: 150px;
+  padding-top: 50px;
 }
 
 .minhafoto {
-  width: 150px;
-  height: 200px;
-  padding-top: 50px;
+  width: 280px;
 }
 
 .seta {
@@ -71,11 +70,19 @@ export default {
 }
 
 .text_container {
-  width: 45%;
+  width: 35%;
   height: 50%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
 }
 
 .text_azul {
-  color: blue;
+  color: rgb(54, 54, 235);
+  font-size: 17px;
+}
+
+h1 {
+  font-size: 42px;
 }
 </style>
