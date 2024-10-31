@@ -12,6 +12,11 @@
         frontend com Vue.js, a fim de aprimorar minhas habilidades e construir
         uma base sólida para alavancar minha carreira profissional.
       </p>
+      <div class="icones">
+        <div v-for="icone in icones" :key="icone">
+          <img :src="icone" />
+        </div>
+      </div>
     </div>
   </div>
   <div class="possicao_seta">
@@ -25,6 +30,10 @@ export default {
     return {
       minhaFoto: require("../assets/minhaFoto.png"),
       setaBaixo: require("../assets/setasBaixo.png"),
+      icones: [
+        require("../assets/icones/whatsapp.png"),
+        require("../assets/icones/linkedin.png"),
+      ],
     };
   },
 };
@@ -36,7 +45,7 @@ export default {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  text-align: start;
+  text-align: center;
   background-color: #090a0c;
   color: #fff;
   height: 640px;
@@ -45,7 +54,10 @@ export default {
 }
 
 .minhafoto {
-  width: 280px;
+  width: 270px;
+  border: 2px dotted #ffffff;
+  padding: 15px;
+  border-radius: 50%;
 }
 
 .seta {
@@ -78,11 +90,18 @@ export default {
 }
 
 .text_azul {
-  color: rgb(54, 54, 235);
+  color: #1b9be4;
   font-size: 17px;
 }
 
 h1 {
   font-size: 42px;
+}
+
+.icones {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 25px;
 }
 </style>

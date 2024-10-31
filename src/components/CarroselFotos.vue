@@ -66,7 +66,7 @@ export default {
 }
 
 .carrossel {
-  width: 600px;
+  width: 530px;
   height: 300px;
   overflow: hidden;
 }

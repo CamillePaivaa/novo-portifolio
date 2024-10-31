@@ -13,33 +13,28 @@
       linkProjeto="https://catalogodefilmeconsimindoapi.vercel.app/"
       linkGit="https://github.com/CamillePaivaa/Cat-logo-de-Filmes_consumindoApi"
     />
+    <CardProjetos
+      titulo="Pet Mania"
+      descricao="Pet Mania é um site de serviços de pet shop desenvolvido com Vue.js. A plataforma permite ao usuário agendar atendimentos e explorar opções como banho, tosa e outros cuidados. A interface moderna e intuitiva facilita a navegação, permitindo visualizar avaliações de clientes e acessar rapidamente serviços essenciais para pets."
+      :imagens="petMania"
+      linkProjeto="https://pet-mania-vue-js.vercel.app"
+      linkGit="https://github.com/CamillePaivaa/Pet-Mania_VueJs"
+    />
 
     <CardProjetos
       titulo="Perguntas Frequentes"
-      descricao=" A dinâmica é divertida e desafiante: o jogador tem 10 segundos para responder cada pergunta. Se acertar, ganha um ponto; se errar ou deixar o tempo acabar, o ponto vai automaticamente para o computador! O jogo consome uma API para gerar perguntas aleatórias, tornando cada rodada única e permitindo uma jogabilidade infinita, com novos desafios surgindo a cada pergunta.Pode ser jogado em dispositivos móveis e desktops."
+      descricao="A dinâmica do jogo é divertida e desafiadora: o jogador tem 10 segundos para responder a cada pergunta. Ao acertar, ganha um ponto; se errar ou o tempo acabar, o ponto vai para o computador! A cada rodada, perguntas aleatórias são geradas por uma API, tornando a experiência única e proporcionando jogabilidade infinita."
       :imagens="perguntasFrequentes"
       linkProjeto="https://jogo-de-perguntas-com-api.vercel.app/"
       linkGit="https://github.com/CamillePaivaa/Jogo-de-Perguntas-Com-Api"
     />
 
     <CardProjetos
-      titulo="Minhas Taefas Pessoais"
-      descricao=" A dinâmica é divertida e desafiante: o jogador tem 10 segundos para responder cada pergunta. Se acertar, ganha um ponto; se errar ou deixar o tempo acabar, o ponto vai automaticamente para o computador! O jogo consome uma API para gerar perguntas aleatórias, tornando cada rodada única e permitindo uma jogabilidade infinita, com novos desafios surgindo a cada pergunta.Pode ser jogado em dispositivos móveis e desktops."
+      titulo="Minhas Tarefas Pessoais"
+      descricao="O projeto é uma lista de tarefas interativa que permite ao usuário adicionar, editar, excluir e organizar tarefas com facilidade. Com um design simples e intuitivo, a aplicação também oferece a opção de limpar a lista completa com um clique. A funcionalidade responsiva permite gerenciar tarefas tanto em dispositivos móveis quanto em desktops."
       :imagens="listaTarefas"
       linkProjeto="https://lista-de-tarefas-tan-zeta.vercel.app/"
       linkGit="https://github.com/CamillePaivaa/Lista-de-Tarefas"
-    />
-
-    <CardProjetos
-      titulo="Pet Mania"
-      descricao=" Pet Mania é um site de serviços de pet shop desenvolvido com Vue.js.
-            A plataforma permite agendar atendimentos, explorar serviços como
-            banho e tosa, e visualizar avaliações de clientes. O design é
-            moderno e intuitivo, garantindo navegação fluida e acesso rápido a
-            serviços essenciais para pets."
-      :imagens="petMania"
-      linkProjeto="https://pet-mania-vue-js.vercel.app"
-      linkGit="https://github.com/CamillePaivaa/Pet-Mania_VueJs"
     />
 
     <h1>Meus Projetos - Ui/Ux Design</h1>
@@ -90,19 +85,23 @@ export default {
   data() {
     return {
       catalogoFilmes: [
-        require("@/assets/projetos/filmes1.png"),
-        require("@/assets/projetos/filmes2.png"),
+        require("@/assets/projetos/catalogoFilmes/img1.png"),
+        require("@/assets/projetos/catalogoFilmes/img2.png"),
       ],
       perguntasFrequentes: [
-        require("../assets/projetos/perguntas.png"),
-        require("../assets/projetos/perguntas1.png"),
-        require("../assets/projetos/perguntas2.png"),
+        require("../assets/projetos/jogoPerguntas/img1.png"),
+        require("../assets/projetos/jogoPerguntas/img2.png"),
+        require("../assets/projetos/jogoPerguntas/img3.png"),
       ],
-      listaTarefas: [require("../assets/projetos/tarefas.png")],
+      listaTarefas: [
+        require("../assets/projetos/listaTarefas/img1.png"),
+        require("../assets/projetos/listaTarefas/img2.png"),
+      ],
       petMania: [
-        require("@/assets/projetos/petmania.png"),
-        require("@/assets/projetos/petmania1.png"),
-        require("@/assets/projetos/petmania2.png"),
+        require("@/assets/projetos/petMania/img1.png"),
+        require("@/assets/projetos/petMania/img2.png"),
+        require("@/assets/projetos/petMania/img3.png"),
+        require("@/assets/projetos/petMania/img4.png"),
       ],
 
       foodFacil: [

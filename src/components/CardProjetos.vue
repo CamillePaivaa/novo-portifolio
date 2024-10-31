@@ -102,8 +102,8 @@ export default {
   box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.08);
   padding-left: 40px;
   padding-right: 20px;
-  width: 55%;
-  height: 450px;
+  width: 50%;
+  height: 400px;
   display: flex;
   flex-direction: column;
   row-gap: 20px;
@@ -122,7 +122,7 @@ export default {
 .tecnologias {
   display: flex;
   flex-direction: row;
-  margin-top: -30px;
+  margin-top: -40px;
   justify-content: end;
   column-gap: 10px;
 
@@ -135,7 +135,7 @@ export default {
   display: flex;
   flex-direction: row;
   column-gap: 30px;
-  padding-top: 80px;
+  padding-top: 50px;
 }
 
 .botoes button,
