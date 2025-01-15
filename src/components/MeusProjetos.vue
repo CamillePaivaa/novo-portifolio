@@ -3,6 +3,17 @@
     <h1>Meus Projetos - VueJs</h1>
 
     <CardProjetos
+      titulo="Shopping Bag"
+      descricao=" O shopping-bag é uma aplicação de e-commerce que permite adicionar, ajustar e 
+      remover produtos do carrinho. Utiliza uma API RESTful para obter dados dos produtos, Vuex para
+       gerenciar o estado e Vue Router para navegação. O design é responsivo, oferecendo uma experiência 
+       otimizada para dispositivos móveis e desktops."
+      :imagens="shoppingBag"
+      linkProjeto="https://shopping-bag-psi.vercel.app/#/"
+      linkGit="https://github.com/CamillePaivaa/Shopping-Bag"
+    />
+
+    <CardProjetos
       titulo="Catálogo de Filmes"
       descricao=" O projeto é um catálogo de filmes que consome uma API RESTful para
         exibir informações detalhadas como título, descrição e trailer. A
@@ -13,6 +24,17 @@
       linkProjeto="https://catalogodefilmeconsimindoapi.vercel.app/"
       linkGit="https://github.com/CamillePaivaa/Cat-logo-de-Filmes_consumindoApi"
     />
+    <CardProjetos
+      titulo="Lista de Compras"
+      descricao=" A aplicação permite que o usuário crie uma lista de compras pessoal, selecione produtos, 
+      ajuste quantidades e remova itens. Após o login com e-mail e senha, os dados são salvos no Firebase. 
+      No final, a lista pode ser compartilhada facilmente via WhatsApp com amigos e familiares. A interface é 
+      simples e intuitiva, proporcionando uma experiência prática e rápida."
+      :imagens="listaCompras"
+      linkProjeto="https://minha-lista-de-compras-lac.vercel.app/lista-produtos"
+      linkGit="https://github.com/CamillePaivaa/Minha-Lista-de-Compras"
+    />
+
     <CardProjetos
       titulo="Pet Mania"
       descricao="Pet Mania é um site de serviços de pet shop desenvolvido com Vue.js. A plataforma permite ao usuário agendar atendimentos e explorar opções como banho, tosa e outros cuidados. A interface moderna e intuitiva facilita a navegação, permitindo visualizar avaliações de clientes e acessar rapidamente serviços essenciais para pets."
@@ -35,6 +57,14 @@
       :imagens="listaTarefas"
       linkProjeto="https://lista-de-tarefas-tan-zeta.vercel.app/"
       linkGit="https://github.com/CamillePaivaa/Lista-de-Tarefas"
+    />
+
+    <CardProjetos
+      titulo="Self Service Lunch"
+      descricao="O projeto simula a interface de um self-service de fast food. A aplicação oferece uma experiência interativa onde o usuário pode selecionar itens do cardápio, personalizar escolhas e visualizar o total. A interface foi projetada para ser intuitiva e de fácil navegação, proporcionando uma experiência de autoatendimento ágil e eficiente."
+      :imagens="selfService"
+      linkProjeto="https://self-service-lunch.vercel.app/"
+      linkGit="https://github.com/CamillePaivaa/Self-Service-Lunch"
     />
 
     <h1>Meus Projetos - Ui/Ux Design</h1>
@@ -84,10 +114,22 @@ import CardProjetosUx from "./CardProjetosUx.vue";
 export default {
   data() {
     return {
+      shoppingBag: [
+        require("@/assets/projetos/shoppingBag/img1.png"),
+        require("@/assets/projetos/shoppingBag/img2.png"),
+        require("@/assets/projetos/shoppingBag/img3.png"),
+      ],
+
       catalogoFilmes: [
         require("@/assets/projetos/catalogoFilmes/img1.png"),
         require("@/assets/projetos/catalogoFilmes/img2.png"),
       ],
+      listaCompras: [
+        require("@/assets/projetos/listaCompras/img1.png"),
+        require("@/assets/projetos/listaCompras/img2.png"),
+        require("@/assets/projetos/listaCompras/img3.png"),
+      ],
+
       perguntasFrequentes: [
         require("../assets/projetos/jogoPerguntas/img1.png"),
         require("../assets/projetos/jogoPerguntas/img2.png"),
@@ -102,6 +144,10 @@ export default {
         require("@/assets/projetos/petMania/img2.png"),
         require("@/assets/projetos/petMania/img3.png"),
         require("@/assets/projetos/petMania/img4.png"),
+      ],
+      selfService: [
+        require("@/assets/projetos/selfService/img1.png"),
+        require("@/assets/projetos/selfService/img2.png"),
       ],
 
       foodFacil: [

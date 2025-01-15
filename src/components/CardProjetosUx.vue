@@ -85,10 +85,10 @@ export default {
   row-gap: 20px;
   padding-top: 65px;
   transition: transform 0.3s ease-in-out;
+}
 
-  p {
-    width: 73%;
-  }
+p {
+  width: 73%;
 }
 
 .descricao_projeto_container:hover {
@@ -101,12 +101,10 @@ export default {
   margin-top: -30px;
   justify-content: end;
   column-gap: 10px;
-
-  img {
-    width: 25px;
-  }
 }
-
+img {
+  width: 25px;
+}
 .botoes {
   display: flex;
   flex-direction: row;

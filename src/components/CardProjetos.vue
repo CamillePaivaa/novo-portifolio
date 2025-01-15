@@ -85,7 +85,7 @@ export default {
 }
 .carrosel_container {
   display: flex;
-  flex-direction: row; /* Mudança para colocar o texto abaixo */
+  flex-direction: row;
   align-items: center;
   margin-bottom: 70px;
 }
@@ -109,12 +109,11 @@ export default {
   row-gap: 20px;
   padding-top: 65px;
   transition: transform 0.3s ease-in-out;
-
-  p {
-    width: 73%;
-  }
 }
 
+p {
+  width: 73%;
+}
 .descricao_projeto_container:hover {
   transform: scale(1.02);
 }
@@ -125,10 +124,10 @@ export default {
   margin-top: -40px;
   justify-content: end;
   column-gap: 10px;
+}
 
-  img {
-    width: 25px;
-  }
+img {
+  width: 25px;
 }
 
 .botoes {

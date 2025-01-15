@@ -8,14 +8,20 @@
       <p>
         Sou de Brás Pires, uma cidade do interior de Minas Gerais, e atualmente
         curso Sistemas de Informação na UFV (Universidade Federal de Viçosa).
-        Com 21 anos, estou em busca de uma oportunidade como desenvolvedora
+        Com 22 anos, estou em busca de uma oportunidade como desenvolvedora
         frontend com Vue.js, a fim de aprimorar minhas habilidades e construir
         uma base sólida para alavancar minha carreira profissional.
       </p>
       <div class="icones">
-        <div v-for="icone in icones" :key="icone">
-          <img :src="icone" />
-        </div>
+        <a
+          href="https://wa.me/5532998306120?text=Olá%20Camille,%20vi%20seu%20portfólio%20e%20fiquei%20muito%20interessado(a)%20nos%20seus%20projetos.%20Gostaria%20de%20saber%20mais%20sobre%20seus%20serviços%20e%20como%20podemos%20trabalhar%20juntos!"
+          target="_blank"
+        >
+          <img class="icone" :src="whats"
+        /></a>
+        <a href="https://www.linkedin.com/in/camillepaiva" target="_blank"
+          ><img class="icone" :src="linkedin"
+        /></a>
       </div>
     </div>
   </div>
@@ -30,10 +36,8 @@ export default {
     return {
       minhaFoto: require("../assets/minhaFoto.png"),
       setaBaixo: require("../assets/setasBaixo.png"),
-      icones: [
-        require("../assets/icones/whatsapp.png"),
-        require("../assets/icones/linkedin.png"),
-      ],
+      whats: [require("../assets/icones/whatsapp.png")],
+      linkedin: [require("../assets/icones/linkedin.png")],
     };
   },
 };
@@ -77,7 +81,7 @@ export default {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(10px); /* Faz a seta descer */
+    transform: translateY(10px);
   }
 }
 
@@ -103,5 +107,13 @@ h1 {
   flex-direction: row;
   justify-content: center;
   column-gap: 25px;
+}
+
+.icone {
+  transition: transform 0.3s ease;
+}
+
+.icone:hover {
+  transform: scale(1.2);
 }
 </style>

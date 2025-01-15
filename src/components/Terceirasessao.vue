@@ -30,22 +30,24 @@ export default {
           "HTML",
           "CSS",
           "JavaScript",
+          "VueJs",
+          "Git",
+          "Bootstrap",
           "Adobe XD",
           "Figma",
           "Photoshop",
-          "VueJs",
-          "Git",
         ],
 
         imgCard: [
           require("../assets/imgCards/html.png"),
           require("../assets/imgCards/css.png"),
           require("../assets/imgCards/javascript.png"),
+          require("../assets/imgCards/vuejs.png"),
+          require("../assets/imgCards/git.png"),
+          require("../assets/imgCards/bootstrap.png"),
           require("../assets/imgCards/adobexd.png"),
           require("../assets/imgCards/figma.png"),
           require("../assets/imgCards/photoshop.png"),
-          require("../assets/imgCards/vuejs.png"),
-          require("../assets/imgCards/git.png"),
         ],
       },
     };
@@ -71,11 +73,11 @@ export default {
   width: 60%;
   gap: 30px;
   margin-bottom: 50px;
-  justify-content: center;
+  justify-content: flex-start;
+}
 
-  img {
-    width: 80px;
-  }
+img {
+  width: 80px;
 }
 
 .card {
