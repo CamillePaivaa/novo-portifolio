@@ -70,11 +70,7 @@
     <h1>Meus Projetos - Ui/Ux Design</h1>
     <CardProjetosUx
       titulo="Faxinex"
-      descricao=" Plataforma para contratação de diaristas em pequenos municípios.
-            Profissionais de limpeza podem criar perfis, e os clientes filtram
-            por localização e programam serviços. O sistema é autossustentável,
-            com pacotes personalizados e preços ajustados ao tamanho do local,
-            oferecendo uma solução eficiente e acessível para ambos os lados."
+      descricao=" Plataforma para contratação de diaristas em pequenos municípios. Profissionais de limpeza podem criar perfis, e os clientes filtram por localização e programam serviços. O sistema é autossustentável, com pacotes personalizados e preços ajustados ao tamanho do local. Além disso, oferece suporte para que profissionais e clientes tenham uma experiência segura e confiável, proporcionando uma solução eficiente e acessível para ambos os lados."
       :imagens="faxinex"
       linkProjeto="https://www.behance.net/gallery/192795073/Faxinex-App-UI-UX-Design-XD-FIGMAPSD"
     />
