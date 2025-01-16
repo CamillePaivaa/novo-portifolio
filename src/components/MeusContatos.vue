@@ -119,4 +119,28 @@ export default {
   background-color: rgb(5, 5, 10);
   color: #fff;
 }
+
+@media (max-width: 400px) {
+  .page_container {
+    width: 90%;
+    margin-left: 5%;
+    row-gap: 20px;
+  }
+
+  h1,
+  p {
+    width: 90%;
+    margin-left: 5%;
+  }
+  .form_container {
+    row-gap: 10px;
+    width: 100%;
+
+    margin-left: 0%;
+  }
+
+  .btn_enviar {
+    width: 100%;
+  }
+}
 </style>
