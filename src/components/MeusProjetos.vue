@@ -151,20 +151,20 @@ export default {
       ],
 
       foodFacil: [
-        require("../assets/projetos/foodfacil.png"),
-        require("../assets/projetos/foodfacil1.png"),
-        require("../assets/projetos/foodfacil2.png"),
+        require("../assets/projetos/foodFacil/img1.png"),
+        require("../assets/projetos/foodFacil/img2.png"),
+        require("../assets/projetos/foodFacil/img3.png"),
       ],
       banGeek: [
-        require("../assets/projetos/bangeek.png"),
-        require("../assets/projetos/bangeek1.png"),
-        require("../assets/projetos/bangeek2.png"),
+        require("../assets/projetos/banGeek/img1.png"),
+        require("../assets/projetos/banGeek/img2.png"),
+        require("../assets/projetos/banGeek/img3.png"),
       ],
 
       faxinex: [
-        require("../assets/projetos/faxinex.png"),
-        require("../assets/projetos/faxinex1.png"),
-        require("../assets/projetos/faxinex2.png"),
+        require("../assets/projetos/faxinex/img1.png"),
+        require("../assets/projetos/faxinex/img2.png"),
+        require("../assets/projetos/faxinex/img3.png"),
       ],
 
       lavarme: [require("../assets/projetos/lavarme.png")],

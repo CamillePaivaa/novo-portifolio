@@ -86,7 +86,7 @@ export default {
 }
 
 .seta-esquerda {
-  left: -40px;
+  left: -30px;
 }
 
 .seta-direita {
