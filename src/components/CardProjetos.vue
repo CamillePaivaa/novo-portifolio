@@ -170,7 +170,7 @@ img {
     width: 100%;
   }
   .botoes {
-    margin-top: 43%;
+    margin-top: 48%;
     flex-direction: column;
     row-gap: 20px;
   }
