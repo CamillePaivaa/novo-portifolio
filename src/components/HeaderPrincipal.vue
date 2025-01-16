@@ -89,4 +89,14 @@ export default {
 .nav-link.active {
   color: #1b9be4;
 }
+
+@media (max-width: 400px) {
+  .header_container {
+    justify-content: space-evenly;
+    padding: 0;
+  }
+  .nav-link {
+    font-size: 13px;
+  }
+}
 </style>

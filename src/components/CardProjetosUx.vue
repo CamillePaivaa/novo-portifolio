@@ -4,17 +4,12 @@
       <h3>{{ titulo }}</h3>
       <p>{{ descricao }}</p>
 
-      <div class="botoes">
-        <button class="botao_abrir_projeto" @click="redirectTo(linkProjeto)">
-          Abrir Projeto
-        </button>
-      </div>
-
-      <div class="tecnologias">
-        <div v-for="img in tecnologias" :key="img">
-          <img :src="img" />
-        </div>
-      </div>
+      <button
+        class="botao_abrir_projeto botoes"
+        @click="redirectTo(linkProjeto)"
+      >
+        Abrir Projeto
+      </button>
     </div>
 
     <CarroselFotos :imagens="imagens" class="carrosel" />
@@ -53,15 +48,9 @@ export default {
 };
 </script>
 <style scoped>
-.projetos_container {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  margin-left: 12%;
-}
 .carrosel_container {
   display: flex;
-  flex-direction: row; /* Mudança para colocar o texto abaixo */
+  flex-direction: row;
   align-items: center;
   margin-bottom: 70px;
 }
@@ -95,23 +84,6 @@ p {
   transform: scale(1.02);
 }
 
-.tecnologias {
-  display: flex;
-  flex-direction: row;
-  margin-top: -30px;
-  justify-content: end;
-  column-gap: 10px;
-}
-img {
-  width: 25px;
-}
-.botoes {
-  display: flex;
-  flex-direction: row;
-  column-gap: 30px;
-  padding-top: 80px;
-}
-
 .botoes button,
 .botoes img {
   transition: transform 0.3s ease-in-out; /* Adiciona a transição */
@@ -119,7 +91,7 @@ img {
 
 .botoes button:hover,
 .botoes img:hover {
-  transform: scale(1.1); /* Aplica o efeito de escala */
+  transform: scale(1.1);
 }
 
 .botao_abrir_projeto {
@@ -128,5 +100,35 @@ img {
   background-color: #090a0c;
   border-radius: 10px;
   color: #fff;
+}
+
+@media (max-width: 400px) {
+  .carrosel_container {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .descricao_projeto_container {
+    width: 100%;
+    padding: 15px;
+    height: auto;
+  }
+  p {
+    width: 100%;
+  }
+
+  .carrosel {
+    width: 80%;
+    margin-left: 0%;
+    margin-top: 290px;
+  }
+
+  .botao_abrir_projeto {
+    margin-top: 70%;
+    width: 100%;
+    height: 30px;
+    font-size: 12px;
+    border-radius: 5px;
+  }
 }
 </style>

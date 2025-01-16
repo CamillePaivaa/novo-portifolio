@@ -116,4 +116,53 @@ h1 {
 .icone:hover {
   transform: scale(1.2);
 }
+
+@media (max-width: 400px) {
+  .apresentacao_inicial_container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .minhafoto {
+    width: 150px;
+    padding: 10px;
+    margin-bottom: 30px;
+  }
+
+  .text_container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .text_azul {
+    font-size: 10px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+  .icones {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+  }
+  .icone {
+    width: 20px;
+    height: 20px;
+  }
+
+  .seta {
+    width: 30px;
+  }
+}
 </style>

@@ -103,4 +103,41 @@ img {
   flex-direction: column;
   row-gap: 40px;
 }
+
+@media (max-width: 400px) {
+  .habilidades_container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    width: 90%;
+    margin-left: 5%;
+    align-items: center;
+  }
+
+  .descricao_habilidades {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 20px;
+  }
+
+  .cards_componente {
+    width: 90%;
+    gap: 10px;
+    margin-top: 25px;
+  }
+
+  .card {
+    row-gap: 20px;
+    border-radius: 10px;
+
+    width: 48%;
+    height: 150px;
+  }
+  img {
+    width: 50px;
+  }
+}
 </style>

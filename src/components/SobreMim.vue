@@ -1,21 +1,19 @@
 <template>
   <PrimeiraSessao />
-
-  <Terceirasessao />
+  <Segundasessao />
 </template>
 
 <script>
 import PrimeiraSessao from "@/components/PrimeiraSessao.vue";
 
-import Terceirasessao from "./Terceirasessao.vue";
+import Segundasessao from "./Segundasessao.vue";
 
 export default {
   name: "SobreMim",
 
   components: {
     PrimeiraSessao,
-
-    Terceirasessao,
+    Segundasessao,
   },
 };
 </script>

@@ -8,11 +8,7 @@
         <button class="botao_abrir_projeto" @click="redirectTo(linkProjeto)">
           Abrir Projeto
         </button>
-        <img
-          :src="botaoGit"
-          style="width: 40px; height: 40px; cursor: pointer"
-          @click="redirectTo(linkGit)"
-        />
+        <img :src="botaoGit" class="btn_git" @click="redirectTo(linkGit)" />
       </div>
 
       <div class="tecnologias">
@@ -77,12 +73,6 @@ export default {
 </script>
 
 <style scoped>
-.projetos_container {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  margin-left: 12%;
-}
 .carrosel_container {
   display: flex;
   flex-direction: row;
@@ -153,5 +143,56 @@ img {
   background-color: #090a0c;
   border-radius: 10px;
   color: #fff;
+}
+.btn_git {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+@media (max-width: 400px) {
+  .carrosel_container {
+    flex-direction: column;
+    width: 95%;
+    margin-bottom: 30px;
+  }
+  .descricao_projeto_container {
+    width: 100%;
+    padding: 15px;
+    height: auto;
+  }
+  .carrosel {
+    width: 85%;
+    margin-left: 0%;
+    margin-top: 77%;
+  }
+  p {
+    width: 100%;
+  }
+  .botoes {
+    margin-top: 55%;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .botao_abrir_projeto {
+    width: 100%;
+    height: 30px;
+    font-size: 12px;
+    border-radius: 5px;
+  }
+  .btn_git {
+    width: 25px;
+    height: 25px;
+  }
+
+  .tecnologias {
+    margin-top: -45px;
+    column-gap: 5px;
+  }
+
+  img {
+    width: 15px;
+  }
 }
 </style>

@@ -61,7 +61,6 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
   padding: 20px 0;
 }
 
@@ -92,5 +91,29 @@ export default {
 
 .seta-direita {
   right: -40px;
+}
+
+@media (max-width: 400px) {
+  .carrossel {
+    width: 95%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .imagem {
+    width: 90%;
+    height: auto;
+  }
+
+  .seta-esquerda {
+    left: -5px;
+    width: 25px;
+  }
+
+  .seta-direita {
+    right: -5px;
+    width: 25px;
+  }
 }
 </style>

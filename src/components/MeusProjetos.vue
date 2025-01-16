@@ -188,7 +188,15 @@ export default {
   display: flex;
   flex-direction: column;
   padding-top: 130px;
-
   margin-left: 10%;
+}
+
+@media (max-width: 400px) {
+  .page_container {
+    margin-left: 2.5%;
+    width: 95%;
+    align-items: center;
+    padding-top: 110px;
+  }
 }
 </style>
