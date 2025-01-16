@@ -116,4 +116,23 @@ export default {
     width: 25px;
   }
 }
+
+@media (min-width: 425px) and (max-width: 625px) {
+  .carrossel {
+    width: 95%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .seta-esquerda {
+    left: -5px;
+    width: 25px;
+  }
+
+  .seta-direita {
+    right: -5px;
+    width: 25px;
+  }
+}
 </style>

@@ -131,4 +131,45 @@ p {
     border-radius: 5px;
   }
 }
+@media (min-width: 425px) and (max-width: 625px) {
+  .carrosel_container {
+    flex-direction: column;
+    width: 95%;
+    margin-bottom: 30px;
+  }
+
+  .descricao_projeto_container {
+    width: 100%;
+    padding: 15px;
+    height: auto;
+  }
+  p {
+    width: 100%;
+  }
+
+  .carrosel {
+    width: 80%;
+    margin-left: 0%;
+    margin-top: 55%;
+  }
+
+  .botao_abrir_projeto {
+    margin-top: 65%;
+    width: 100%;
+    height: 30px;
+    font-size: 12px;
+    border-radius: 5px;
+  }
+}
+
+@media (min-width: 645px) and (max-width: 1024px) {
+  .botoes {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .descricao_projeto_container {
+    height: auto;
+  }
+}
 </style>

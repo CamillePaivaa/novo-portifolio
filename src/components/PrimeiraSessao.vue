@@ -117,7 +117,7 @@ h1 {
   transform: scale(1.2);
 }
 
-@media (max-width: 400px) {
+@media (max-width: 768px) {
   .apresentacao_inicial_container {
     display: flex;
     flex-direction: column;

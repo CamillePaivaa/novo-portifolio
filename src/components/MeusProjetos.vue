@@ -187,10 +187,19 @@ export default {
   margin-left: 10%;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 768px) {
   .page_container {
     margin-left: 2.5%;
     width: 95%;
+    align-items: center;
+    padding-top: 110px;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 625px) {
+  .page_container {
+    margin-left: 5%;
+    width: 90%;
     align-items: center;
     padding-top: 110px;
   }

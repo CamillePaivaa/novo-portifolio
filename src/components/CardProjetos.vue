@@ -195,4 +195,64 @@ img {
     width: 15px;
   }
 }
+
+@media (min-width: 425px) and (max-width: 625px) {
+  .carrosel_container {
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .descricao_projeto_container {
+    width: 100%;
+    padding: 15px;
+    height: auto;
+  }
+  .carrosel {
+    width: 85%;
+    margin-left: 0%;
+    margin-top: 47%;
+  }
+  p {
+    width: 100%;
+  }
+  .botoes {
+    margin-top: 55%;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .botao_abrir_projeto {
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+    border-radius: 10px;
+  }
+  .btn_git {
+    width: 35px;
+    height: 35px;
+  }
+
+  .tecnologias {
+    margin-top: -45px;
+    column-gap: 10px;
+  }
+
+  img {
+    width: 20px;
+  }
+}
+
+@media (min-width: 645px) and (max-width: 1024px) {
+  .botoes {
+    padding-top: 15px;
+  }
+
+  .descricao_projeto_container {
+    height: auto;
+  }
+
+  .tecnologias {
+    margin-top: 10px;
+  }
+}
 </style>

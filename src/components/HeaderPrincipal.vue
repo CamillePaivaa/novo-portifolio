@@ -90,7 +90,7 @@ export default {
   color: #1b9be4;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 768px) {
   .header_container {
     justify-content: space-evenly;
     padding: 0;
