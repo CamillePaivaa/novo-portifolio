@@ -164,13 +164,13 @@ img {
   .carrosel {
     width: 85%;
     margin-left: 0%;
-    margin-top: 77%;
+    margin-top: 57%;
   }
   p {
     width: 100%;
   }
   .botoes {
-    margin-top: 55%;
+    margin-top: 43%;
     flex-direction: column;
     row-gap: 20px;
   }

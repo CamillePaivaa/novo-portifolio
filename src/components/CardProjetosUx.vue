@@ -120,11 +120,11 @@ p {
   .carrosel {
     width: 80%;
     margin-left: 0%;
-    margin-top: 290px;
+    margin-top: 65%;
   }
 
   .botao_abrir_projeto {
-    margin-top: 70%;
+    margin-top: 55%;
     width: 100%;
     height: 30px;
     font-size: 12px;
