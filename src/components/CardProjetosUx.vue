@@ -124,7 +124,7 @@ p {
   }
 
   .botao_abrir_projeto {
-    margin-top: 55%;
+    margin-top: 65%;
     width: 100%;
     height: 30px;
     font-size: 12px;
